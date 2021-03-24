@@ -14,6 +14,7 @@
         background: var(--button-bg);
         &:hover {
             border-color: var(--border-color-hover);
+            background-color: var(--button-hover-bg)
         }
         &:active {
             background-color: var(--button-active-bg);
