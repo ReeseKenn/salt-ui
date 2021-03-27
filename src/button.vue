@@ -36,6 +36,7 @@ export default {
 }
 
 .s-button {
+  color: #0a3d62;
   font-size: var(--font-size);
   height: var(--button-height);
   padding: 0 1em;
@@ -47,6 +48,10 @@ export default {
   align-items: center;
   vertical-align: top;
   line-height: 1;
+
+  svg {
+    fill: #0a3d62;
+  }
 
   &:hover {
     border-color: var(--border-color-hover);
