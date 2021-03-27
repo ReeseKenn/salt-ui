@@ -37,6 +37,8 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  vertical-align: top;
+  line-height: 1;
 
   &:hover {
     border-color: var(--border-color-hover);
@@ -53,7 +55,7 @@ export default {
 
   .icon {
     width: 1em;
-    height: 1em;
+    margin-right: 0.3em;
   }
 
   > .icon {
@@ -67,6 +69,8 @@ export default {
   &.icon-right {
     > .icon {
       order: 2;
+      margin-right: 0;
+      margin-left: 0.3em;
     }
 
     > .content {
