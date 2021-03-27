@@ -23,6 +23,7 @@ const expect = chai.expect
 
 // 单元测试
 {
+    // 测试按钮含有icon
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
         propsData: {
@@ -37,6 +38,7 @@ const expect = chai.expect
     vm.$destroy()
 }
 {
+    // 测试loading状态展示
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
         propsData: {
@@ -52,6 +54,7 @@ const expect = chai.expect
     vm.$destroy()
 }
 {
+    // 测试图标位置
     const div = document.createElement('div')
     document.body.appendChild(div)
     const Constructor = Vue.extend(Button)
@@ -68,6 +71,7 @@ const expect = chai.expect
     vm.$destroy()
 }
 {
+    // 测试图标位置
     const div = document.createElement('div')
     document.body.appendChild(div)
     const Constructor = Vue.extend(Button)
@@ -85,6 +89,7 @@ const expect = chai.expect
     vm.$destroy()
 }
 {
+    // 测试按钮click事件是否能触发
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
         propsData: {

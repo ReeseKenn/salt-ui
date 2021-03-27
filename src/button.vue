@@ -8,7 +8,11 @@
   </button>
 </template>
 <script>
+import Icon from './icon'
 export default {
+  components:{
+    'sIcon':Icon
+  },
   props: {
     icon: {},
     loading: {
