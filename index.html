@@ -39,15 +39,15 @@
     <s-button icon="download">
         下载
     </s-button>
-    <s-button icon="download" icon-position="right">
+    <s-button icon="download" icon-position="right" :loading="loading" @click="loading=!loading">
         下载
     </s-button>
-    <s-button>
+    <s-button :loading="loading1" @click="loading1=!loading1">
         下载
     </s-button>
 
 </div>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_2445904_pq089snkzc8.js"></script>
+<script src="//at.alicdn.com/t/font_2445904_oezamm81xv.js"></script>
 </body>
 </html>
