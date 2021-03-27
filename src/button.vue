@@ -1,8 +1,8 @@
 <template>
   <button class="s-button" :class="{[`icon-${iconPosition}`]:true}">
-    <s-icon class="icon" v-if="icon" :name="icon"/>
+    <s-icon class="icon" v-if="icon" :name="icon"></s-icon>
     <div class="content">
-      <slot/>
+      <slot></slot>
     </div>
   </button>
 </template>
