@@ -27,7 +27,7 @@ export default {
   > .s-button {
     border-radius: 0;
 
-    &:nth-child(n+1) {
+    &:not(:last-of-type) {
       margin-right: -1px;
     }
 
