@@ -8,7 +8,6 @@
 export default {
   name: "sButtonGroup",
   mounted() {
-    console.log(this.$el.children)
     for (let node of this.$el.children) {
       let nodeName = node.nodeName.toLowerCase()
       if (nodeName !== 'button') {
