@@ -2,9 +2,7 @@
 
 基于vue.js的UI组件库
 
-[![Build Status](https://travis-ci.com/ReeseKenn/salt-ui.svg?branch=main)](https://travis-ci.com/ReeseKenn/salt-ui)
-
-
+[![Build Status](https://travis-ci.com/ReeseKenn/salt-ui.svg?branch=main)](https://travis-ci.com/ReeseKenn/salt-ui)![GitHub](https://img.shields.io/github/license/ReeseKenn/salt-ui)![npm](https://img.shields.io/npm/dm/salt-ui-test)
 
 ## 介绍
 
