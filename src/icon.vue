@@ -15,6 +15,5 @@ export default {
 <style scoped lang="scss">
 .s-icon {
   width: 1em;
-  margin-right: 0.3em;
 }
 </style>
