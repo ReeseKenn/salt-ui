@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: "sButtonGroup",
+  name: 'SButtonGroup',
   mounted() {
-    for (let node of this.$el.children) {
-      let nodeName = node.nodeName.toLowerCase()
+    for (const node of this.$el.children) {
+      const nodeName = node.nodeName.toLowerCase()
       if (nodeName !== 'button') {
         console.error(`'s-button-group''只允许以'button'为子元素'，'${nodeName}'不被允许插入`)
       }

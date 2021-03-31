@@ -1,43 +1,43 @@
 <template>
-    <button class="s-button" :class="{[`icon-${iconPosition}`]:true,'button-circle':circle}" @click="$emit('click')">
-        <s-icon class="icon" v-if="icon&&!loading" :name="icon"></s-icon>
-        <s-icon class="loading icon" v-if="loading" name="loading"></s-icon>
-        <div v-if="!circle" :style="getStyles()" class="content">
-            <slot></slot>
-        </div>
-    </button>
+  <button class="s-button" :class="{[`icon-${iconPosition}`]:true,'button-circle':circle}" @click="$emit('click')">
+    <s-icon v-if="icon&&!loading" class="icon" :name="icon"></s-icon>
+    <s-icon v-if="loading" class="loading icon" name="loading"></s-icon>
+    <div v-if="!circle" :style="getStyles()" class="content">
+      <slot></slot>
+    </div>
+  </button>
 </template>
 <script>
-    export default {
-        props: {
-            icon: {},
-            circle: {
-                type: Boolean,
-                default: false
-            },
-            loading: {
-                type: Boolean,
-                default: false
-            },
-            iconPosition: {
-                type: String,
-                default: 'left',
-                validator(value) {
-                    return value === 'left' || value === 'right'
-                }
-            }
-        },
-        methods: {
-            getStyles() {
-                const style = {}
-                if (!this.icon && !this.loading) {
-                    return style
-                }
-                style[`margin-${this.iconPosition}`] = this.$slots.default ? '0.3em' : 0
-                return style
-            }
-        }
+export default {
+  props: {
+    icon: {},
+    circle: {
+      type: Boolean,
+      default: false
+    },
+    loading: {
+      type: Boolean,
+      default: false
+    },
+    iconPosition: {
+      type: String,
+      default: 'left',
+      validator(value) {
+        return value === 'left' || value === 'right'
+      }
     }
+  },
+  methods: {
+    getStyles() {
+      const style = {}
+      if (!this.icon && !this.loading) {
+        return style
+      }
+      style[`margin-${this.iconPosition}`] = this.$slots.default ? '0.3em' : 0
+      return style
+    }
+  }
+}
 </script>
 <style lang="scss">
     @keyframes spin {
