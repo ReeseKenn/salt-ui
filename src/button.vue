@@ -8,7 +8,10 @@
   </button>
 </template>
 <script>
+import Icon from './icon'
+
 export default {
+  components: {'s-icon': Icon},
   props: {
     icon: {},
     circle: {
@@ -92,6 +95,7 @@ $text-color: #0a3d62;
   }
 
   .icon {
+    height: 1em;
     width: 1em;
     /*margin-right: 0.3em;*/
   }
