@@ -16,9 +16,24 @@ module.exports = {
             {text:'交流',link:'https://github.com/ReeseKenn/salt-ui/issues'}
         ],
         sidebar:[
-            '/install/',
-            '/get-started/'
-        ]
+            {
+                title:'入门',
+                collapsable: false, // 可选的, 默认值是 true,
+                children: [
+                    '/install/',
+                    '/get-started/',
+                ]
+            },
+            {
+                title: '组件',
+                collapsable: false, // 可选的, 默认值是 true,
+                sidebarDepth: 0,    // 可选的, 默认值是 1
+                children: [
+                    '/components/button'
+                ],
+            }
+        ],
+        sass: { indentedSyntax: true },
     }
 
 }

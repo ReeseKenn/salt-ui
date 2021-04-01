@@ -1,16 +1,25 @@
 <template>
-<div>
-  <s-button>默认按钮</s-button>
-</div>
+  <div class="button-wrapper">
+    <s-button>默认按钮</s-button>
+  </div>
 </template>
 
 <script>
 import Button from '../../../src/button'
+
 export default {
-  components:{'s-button':Button}
+  components: {
+    's-button': Button
+  },
+  data() {
+    return {
+      content: ''
+    }
+  }
 }
 </script>
-
-<style scoped>
-
+<style lang="scss" scoped>
+.button-wrapper {
+  padding: 10px 0;
+}
 </style>
