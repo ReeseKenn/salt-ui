@@ -1,23 +1,24 @@
 module.exports = {
-    title:'salt-ui',
-    description:'一个易用的UI框架',
-    themeConfig:{
+    title: 'salt-ui',
+    description: '一个易用的UI框架',
+    base: "/salt-ui/",
+    themeConfig: {
         head: [
             [
                 'link', // 设置 favicon.ico，注意图片放在 public 文件夹下
-                { rel: 'icon', href: 'salt.png' }
+                {rel: 'icon', href: 'salt.png'}
             ]
         ],
-        logo:'/salt.svg',
-        sidebar:'auto',
-        nav:[
-            {text:'主页',link:'/'},
-            {text:'文档',link:'/guide/'},
-            {text:'交流',link:'https://github.com/ReeseKenn/salt-ui/issues'}
+        logo: '/salt.svg',
+        sidebar: 'auto',
+        nav: [
+            {text: '主页', link: '/'},
+            {text: '文档', link: '/install/'},
+            {text: 'Github', link: 'https://github.com/ReeseKenn/salt-ui/issues'}
         ],
-        sidebar:[
+        sidebar: [
             {
-                title:'入门',
+                title: '入门',
                 collapsable: false, // 可选的, 默认值是 true,
                 children: [
                     '/install/',
@@ -33,7 +34,7 @@ module.exports = {
                 ],
             }
         ],
-        sass: { indentedSyntax: true },
+        sass: {indentedSyntax: true},
     }
 
 }
