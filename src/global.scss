@@ -8,39 +8,39 @@
 
 
   // Color
-  --primary-color          : #2d8cf0;
-  --info-color             : #2db7f5;
-  --success-color          : #19be6b;
-  --processing-color       : --primary-color;
-  --warning-color          : #ff9900;
-  --error-color            : #ed4014;
-  --normal-color           : #e6ebf1;
-  --link-color             : #2D8cF0;
+  --primary-color: #2d8cf0;
+  --info-color: #2db7f5;
+  --success-color: #19be6b;
+  --processing-color: --primary-color;
+  --warning-color: #ff9900;
+  --error-color: #ed4014;
+  --normal-color: #e6ebf1;
+  --link-color: #2D8cF0;
   //--link-hover-color       : tint(--link-color, 20%);
   //--link-active-color      : shade(--link-color, 5%);
-  --selected-color         : fade(--primary-color, 90%);
-  --tooltip-color          : #fff;
-  --subsidiary-color       : #808695;
-  --rate-star-color        : #f5a623;
+  --selected-color: fade(--primary-color, 90%);
+  --tooltip-color: #fff;
+  --subsidiary-color: #808695;
+  --rate-star-color: #f5a623;
   --white: #fff;
   --black: #000;
 
   // style of a components border
 
   // Background color
-  --background-color-base        : #f7f7f7;  // base
+  --background-color-base: #f7f7f7; // base
   --background-color-select-hover: --input-disabled-bg;
-  --tooltip-bg                   : rgba(70, 76, 91, .9);
-  --head-bg                      : #f9fafc;
-  --table-thead-bg               : #f8f8f9;
-  --table-td-stripe-bg           : #f8f8f9;
-  --table-td-hover-bg            : #ebf7ff;
-  --table-td-highlight-bg        : #ebf7ff;
-  --menu-dark-title              : #515a6e;
-  --menu-dark-active-bg          : #363e4f;
-  --menu-dark-subsidiary-color   : rgba(255,255,255,.7);
-  --menu-dark-group-title-color  : rgba(255,255,255,.36);
-  --date-picker-cell-hover-bg    : #e1f0fe;
+  --tooltip-bg: rgba(70, 76, 91, .9);
+  --head-bg: #f9fafc;
+  --table-thead-bg: #f8f8f9;
+  --table-td-stripe-bg: #f8f8f9;
+  --table-td-hover-bg: #ebf7ff;
+  --table-td-highlight-bg: #ebf7ff;
+  --menu-dark-title: #515a6e;
+  --menu-dark-active-bg: #363e4f;
+  --menu-dark-subsidiary-color: rgba(255, 255, 255, .7);
+  --menu-dark-group-title-color: rgba(255, 255, 255, .36);
+  --date-picker-cell-hover-bg: #e1f0fe;
 
 
   --button-height: 32px;
@@ -60,4 +60,8 @@
 
 body {
   font-size: var(--font-size)
+}
+
+.section {
+  margin: 10px 0;
 }

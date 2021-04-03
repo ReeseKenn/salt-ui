@@ -7,24 +7,27 @@
 </head>
 <body>
 <div id="app">
-    <s-button icon="download"></s-button>
-    <s-button icon="download" circle>下载</s-button>
-    <s-button icon="download" icon-position="right" :loading="loading" @click="loading=!loading">
-        下载
-    </s-button>
-    <s-button :loading="loading1" @click="loading1=!loading1">
-        下载
-    </s-button>
-    <s-button-group>
-        <s-button icon="left">上一页</s-button>
-        <s-button icon="right" icon-position="right">下一页</s-button>
-    </s-button-group>
-    <s-button-group>
-        <s-button>编辑</s-button>
-        <s-button>分享</s-button>
-        <s-button>分享</s-button>
-        <s-button>删除</s-button>
-    </s-button-group>
+    <s-input></s-input>
+    <div class="section">
+        <s-button icon="download"></s-button>
+        <s-button icon="download" circle>下载</s-button>
+        <s-button icon="download" icon-position="right" :loading="loading" @click="loading=!loading">
+            下载
+        </s-button>
+        <s-button :loading="loading1" @click="loading1=!loading1">
+            下载
+        </s-button>
+        <s-button-group>
+            <s-button icon="left">上一页</s-button>
+            <s-button icon="right" icon-position="right">下一页</s-button>
+        </s-button-group>
+        <s-button-group>
+            <s-button>编辑</s-button>
+            <s-button>分享</s-button>
+            <s-button>分享</s-button>
+            <s-button>删除</s-button>
+        </s-button-group>
+    </div>
 </div>
 <script src="./src/app.js"></script>
 </body>
