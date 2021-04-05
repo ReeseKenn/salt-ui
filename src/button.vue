@@ -76,59 +76,19 @@ $text-color: #0a3d62;
   vertical-align: top;
   line-height: 1;
 
-  svg {
-    fill: $text-color;
-  }
-
-  &:hover {
-    cursor: pointer;
-    border-color: $border-color-hover;
-    background-color: $button-hover-bg;
-  }
-
-  &:active {
-    background-color: $button-active-bg;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  .icon {
-    height: 1em;
-    width: 1em;
-    /*margin-right: 0.3em;*/
-  }
-
-  > .icon {
-    order: 1;
-  }
-
-  > .content {
-    order: 2;
-  }
-
+  svg {fill: $text-color;}
+  &:hover {cursor: pointer;border-color: $border-color-hover;background-color: $button-hover-bg;}
+  &:active {background-color: $button-active-bg;}
+  &:focus {outline: none;}
+  .icon {height: 1em;width: 1em; /*margin-right: 0.3em;*/}
+  > .icon {order: 1;}
   &.icon-right {
-    > .icon {
-      order: 2;
-      margin-right: 0;
-      /*margin-left: 0.3em;*/
-    }
-
-    > .content {
-      order: 1;
-    }
+    > .icon {order: 2;margin-right: 0; /*margin-left: 0.3em;*/}
+    > .content {order: 1;}
   }
+  > .content {order: 2;}
+  &.button-circle {border-radius: 50%;height: $button-height;width: $button-height;padding: 0;}
 
-  &.button-circle {
-    border-radius: 50%;
-    height: $button-height;
-    width: $button-height;
-    padding: 0;
-  }
-
-  .loading {
-    animation: spin 2s infinite linear;
-  }
+  .loading {animation: spin 2s infinite linear;}
 }
 </style>
