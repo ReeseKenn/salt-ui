@@ -7,9 +7,13 @@
 </head>
 <body>
 <div id="app">
-    <s-input></s-input>
+    <s-input error="1234">></s-input>
+    <s-input disabled></s-input>
+    <s-input value="李四" error="1234"></s-input>
+    <s-input readonly ></s-input>
     <div class="section">
         <s-button icon="download"></s-button>
+        <s-button icon="download" disabled></s-button>
         <s-button icon="download" circle>下载</s-button>
         <s-button icon="download" icon-position="right" :loading="loading" @click="loading=!loading">
             下载
