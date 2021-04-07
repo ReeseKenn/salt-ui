@@ -18,7 +18,7 @@ new Vue({
     },
     created() {
         setInterval(()=>{
-            this.message = this.message+'1'
-        },1000)
+            // this.message = this.message+'1'
+        },3000)
     }
 })

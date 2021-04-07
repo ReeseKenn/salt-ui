@@ -7,8 +7,9 @@
 </head>
 <body>
 <div id="app">
-    <s-input :value="message" @input="message=$event.target.value"></s-input>{{message}}
-    <input :value="message" @input="message=$event.target.value">{{message}}
+    <s-input :value="message" @input="message=$event"></s-input>{{message}}
+    <s-input v-model="message"></s-input>
+    <input :value="message" @input="message=$event.target.value">
     <s-input disabled></s-input>
     <s-input value="1" error="1234"></s-input>
     <s-input readonly ></s-input>
