@@ -25,7 +25,7 @@
 2. 安装salt-ui
 
    ```node
-   npm install salt-ui
+   npm install salt-ui-test
    ```
 
 3. 引入
@@ -39,6 +39,8 @@
 4. 
 
 ## 文档
+
+[salt-ui官网](https://reesekenn.github.io/salt-ui/)
 
 ## 变更记录
 
