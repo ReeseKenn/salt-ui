@@ -13,6 +13,12 @@ new Vue({
     el: '#app',
     data: {
         loading: false,
-        loading1: true
+        loading1: true,
+        message: 'hello world'
+    },
+    created() {
+        setInterval(()=>{
+            this.message = this.message+'1'
+        },1000)
     }
 })

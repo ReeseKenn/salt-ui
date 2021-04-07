@@ -7,9 +7,10 @@
 </head>
 <body>
 <div id="app">
-    <s-input error="1234">></s-input>
+    <s-input :value="message" @input="message=$event.target.value"></s-input>{{message}}
+    <input :value="message" @input="message=$event.target.value">{{message}}
     <s-input disabled></s-input>
-    <s-input value="李四" error="1234"></s-input>
+    <s-input value="1" error="1234"></s-input>
     <s-input readonly ></s-input>
     <div class="section">
         <s-button icon="download"></s-button>
