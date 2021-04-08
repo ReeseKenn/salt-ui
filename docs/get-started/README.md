@@ -8,7 +8,7 @@ title:快速上手
 
 ```javascript
 import {Button} from "salt-ui-test";
-import "salt-ui-demo/dist/index.css";
+import "salt-ui-test/dist/index.css";
 ```
 
 ## 注册组件
