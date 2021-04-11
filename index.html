@@ -7,12 +7,78 @@
 </head>
 <body>
 <div id="app">
-    <s-input :value="message" @input="message=$event"></s-input>{{message}}
-    <s-input v-model="message"></s-input>
-    <input :value="message" @input="message=$event.target.value">
-    <s-input disabled></s-input>
-    <s-input value="1" error="1234"></s-input>
-    <s-input readonly ></s-input>
+    <div class="section">
+        <s-row>
+            <s-col>1</s-col>
+            <s-col>2</s-col>
+        </s-row>
+        <s-row>
+            <s-col>1</s-col>
+            <s-col>2</s-col>
+            <s-col>3</s-col>
+        </s-row>
+        <s-row>
+            <s-col>1</s-col>
+            <s-col>2</s-col>
+            <s-col>3</s-col>
+            <s-col>4</s-col>
+        </s-row>
+        <s-row>
+            <s-col span="2">1</s-col>
+            <s-col span="22">11</s-col>
+        </s-row>
+        <s-row>
+            <s-col span="4">1</s-col>
+            <s-col span="20">11</s-col>
+        </s-row>
+        <hr>
+        <s-row gutter="20">
+            <s-col>1</s-col>
+            <s-col>2</s-col>
+        </s-row>
+        <s-row gutter="20">
+            <s-col>1</s-col>
+            <s-col>2</s-col>
+            <s-col>3</s-col>
+        </s-row>
+        <s-row gutter="20">
+            <s-col>1</s-col>
+            <s-col>2</s-col>
+            <s-col>3</s-col>
+            <s-col>4</s-col>
+        </s-row>
+        <s-row gutter="20">
+            <s-col span="2">1</s-col>
+            <s-col span="20" offset="2">11</s-col>
+        </s-row>
+        <s-row gutter="20">
+            <s-col span="4">1</s-col>
+            <s-col span="20">11</s-col>
+        </s-row>
+        <s-row gutter="20">
+            <s-col span="4">1</s-col>
+            <s-col span="18" offset="2">11</s-col>
+        </s-row>
+        <s-row gutter="20">
+            <s-col span="4">1</s-col>
+            <s-col span="8" offset="2">11</s-col>
+            <s-col span="8" offset="2">11</s-col>
+        </s-row>
+        <s-row gutter="20">
+            <s-col span="4">1</s-col>
+            <s-col span="4" offset="6">11</s-col>
+            <s-col span="8" offset="2">11</s-col>
+        </s-row>
+    </div>
+    <div class="section">
+        <s-input :value="message" @input="message=$event"></s-input>{{message}}
+        <s-input v-model="message"></s-input>
+        <input :value="message" @input="message=$event.target.value">
+        <s-input disabled></s-input>
+        <s-input value="1" error="1234"></s-input>
+        <s-input readonly ></s-input>
+    </div>
+
     <div class="section">
         <s-button icon="download"></s-button>
         <s-button icon="download" disabled></s-button>
