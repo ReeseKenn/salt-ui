@@ -1,6 +1,5 @@
 <template>
-  <div class="col" :class="[span && `col-${span}`, offset && `offset-${offset}`]"
-       :style="{paddingLeft: gutter/2+'px', paddingRight: gutter/2+'px'}">
+  <div class="col" :class="colClasses" :style="colStyle">
     <div style="border: 1px solid #3c6382; height: 50px;">
       <slot></slot>
     </div>
@@ -8,7 +7,7 @@
 </template>
 <script>
 export default {
-name: "SCol",
+  name: "SCol",
   props: {
     span: {
       type: [Number, String]
@@ -17,22 +16,33 @@ name: "SCol",
       type: [Number, String]
     },
   },
-  data () {
+  data() {
     return {
       gutter: 0
     }
   },
-  created () {
-    console.log('col created')
+  computed: {
+    colClasses() {
+      const {span, offset} = this
+      return [
+        span && `col-${span}`,
+        offset && `offset-${offset}`
+      ]
+    },
+    colStyle() {
+      const {gutter} = this
+      return {
+        paddingLeft: gutter / 2 + 'px',
+        paddingRight: gutter / 2 + 'px',
+      }
+    }
   },
-  mounted () {
-    console.log('col mounted')
-  },
+  methods: {}
 }
 </script>
 <style scoped lang="scss">
 .col {
-  width: 50%;
+  width: 100%;
   $class-prefix: col-;
   @for $n from 1 through 24 {
     &.#{$class-prefix}#{$n} {
