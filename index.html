@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <title>salt-ui</title>
     <link rel="stylesheet" href="src/global.scss">
+    <style>
+        .rectangle {
+            width: 0;
+            height: 0;
+            border: 1px solid red;
+            border-radius: 50%;
+            border-width: 90px;
+            border-color: #3c6382 transparent transparent transparent;
+        }
+    </style>
 </head>
 <body>
+
+<div class="rectangle">
+</div>
+
 <div id="app">
     <div class="section">
         <s-row>
@@ -71,12 +85,13 @@
         </s-row>
     </div>
     <div class="section">
-        <s-input :value="message" @input="message=$event"></s-input>{{message}}
+        <s-input :value="message" @input="message=$event"></s-input>
+        {{ message }}
         <s-input v-model="message"></s-input>
         <input :value="message" @input="message=$event.target.value">
         <s-input disabled></s-input>
         <s-input value="1" error="1234"></s-input>
-        <s-input readonly ></s-input>
+        <s-input readonly></s-input>
     </div>
 
     <div class="section">
